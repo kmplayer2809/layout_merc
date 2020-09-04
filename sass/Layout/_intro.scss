@@ -1,0 +1,50 @@
+.intro{
+    padding: 7rem 0 3rem;
+    background-color: $color-black-0;
+    .intro__content{
+        width: 85%;
+        margin: auto;
+        h2{
+            position: relative;
+            color: $color-white-0;
+            &::before{
+                content: "";
+                width: 80px;
+                height: 3px;
+                background-color: $color-white-0;
+                position: absolute;
+                top: -30px;
+                left: 0;
+
+            }
+        }
+        .text{
+            margin-bottom: 40px;
+            p{
+                color: $color-white-0;
+                font-size: 0.9rem;
+                &:nth-child(1){
+                    margin: 20px 0;
+                }
+                a{
+                    color: $color-blue-0;
+                }
+            }
+        }
+        .btn-gotomylocal{
+            color: $color-white-0;
+            background-color: $color-blue-0;
+            padding: 12px 20px;
+            border: none;
+            transition: all 0.5s linear;
+            cursor: pointer;
+            &:focus{
+                outline: none;
+            }
+            &:hover{
+                background-color: #0088C6;
+            }
+        }
+    }
+    
+}

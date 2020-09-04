@@ -1,0 +1,57 @@
+.quick-access {
+   position: fixed;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 0;
+   z-index: 1000;
+
+   ul {
+      li {
+         transform: translateX(168px);
+         cursor: pointer;
+         margin: 2px 0;
+         padding: $pd-1;
+         background-color: $color-black-2;
+         transition: all 0.5s ease;
+
+         span {
+            font-size: $fs-1 + 2;
+            padding-left: 5px;
+         }
+
+         i {
+            font-size: $fs-3;
+            padding: 0 7px 0 4px;
+
+         }
+
+         a {
+            color: $color-white-0;
+
+            i {
+               padding: 0 7px;
+            }
+
+         }
+
+         &:hover {
+            transform: translate(0);
+         }
+      }
+
+      .social-icons {
+         a {
+
+            &:hover {
+               color: $color-blue-0;
+            }
+         }
+      }
+   }
+}
+
+@include reponsive("medium"){
+   .quick-access{
+      display: none;
+   }
+}

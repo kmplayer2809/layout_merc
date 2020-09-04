@@ -1,0 +1,181 @@
+.myFooter {
+    .brandhub-hr {
+        background-color: $color-dark;
+        height: 0.5px;
+        width: 100%;
+        margin: $mg-1 0;
+    }
+
+    .brandbub__title {
+        @include text($color-white-0, $fs-3 + 6, $fw-normal);
+        line-height: 35px;
+    }
+
+    .brandbub__title__bar {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -20px;
+            height: 3px;
+            width: 60px;
+            background-color: $color-white-0;
+        }
+    }
+
+    p {
+        @include text($color-gray-0, $fs-1, $fw-normal);
+        margin-bottom: $mg-1;
+        a{
+            text-decoration: none;
+            color: $color-white-0;
+            &:hover{
+                color: $color-blue-1;
+            }
+        }
+    }
+
+    .brandhub-section {
+        width: 95%;
+        margin: 0 auto;
+        padding: $pd-2 0;
+
+        .brandhub__sitemapgroup {
+            margin: 0;
+            padding: 0;
+            padding-bottom: $pd-3;
+
+            li {
+                margin: $mg-0 0;
+
+                a {
+                    @include text($color-gray-0, $fs-1, $fw-normal);
+                    transition: all 0.3s;
+                    text-decoration: none;
+
+                    &:hover {
+                        @include text($color-blue-1, $fs-1, $fw-normal);
+                    }
+                }
+            }
+        }
+
+        .footerForm__content {
+            .footerForm__input {
+                .input-group {
+                    input {
+                        background-color: $color-black-4;
+                        border-color: $color-black-4;
+                        border-radius: 0;
+
+                        &::placeholder {
+                            @include text($color-white-0, $fs-0, $fw-normal);
+                            font-style: italic;
+                        }
+
+                        &:focus {
+                            border-color: #5c5c5c;
+                            box-shadow: none;
+                        }
+                    }
+
+                    button {
+                        background: linear-gradient(#171717, #101010);
+                        box-shadow: none;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        @include text($color-gray-0, $fs-1, $fw-normal);
+                        &:hover{
+                            color: $color-blue-1;
+                        }
+                        &:active{
+                            background: linear-gradient(#202020,#101010);
+                        }
+                    }
+
+                }
+
+                .input-group-checkbox {
+                    label{
+                        cursor: pointer;
+                        @include text($color-gray-0, $fs-1, $fw-normal);
+                        a{
+                            text-decoration: none;
+                            color: $color-white-0;
+                            &:hover{
+                                color: $color-blue-1;
+                            }
+                        }
+                    }
+                }
+            }
+            .brandhub-social-icon{
+                ul{margin-top: $mg-4;
+                    list-style: none;
+                    li{
+                        display: inline;
+                        margin: 0 $mg-2;
+                        i{
+                            @include text($color-gray-0, $fs-3, $fw-normal);
+                            &:hover{
+                                color: $color-blue-1;
+                            }
+                        }
+                    }
+            }
+                
+            }
+        }
+        .brandbub-logo{
+            padding:0 $pd-5;
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: $mg-2 0;
+                    img{
+                        display: block;
+                        height: 50px;
+                        width: 200px;
+                    }
+                }
+        }
+        .footerBottom__content{
+            .language__option{
+                span{
+                    color: $color-blue-1;
+                }
+            }
+            .footerBottom__privacy{
+                ul{
+                    list-style: none;
+                    li{
+                        display: inline;
+                        margin: 0 $mg-1;
+                        a{
+                            text-decoration: none;
+                            @include text ($color-gray-0, $fs-1, $fw-normal);
+                            &:hover{
+                                color: $color-blue-1;
+                            }
+                        }
+                    }
+                }
+            }
+            .footerBottom__btt{
+                a{
+                    @include text($color-gray-0, $fs-1, $fw-normal);
+                    text-decoration: none;
+                    &:hover{
+                        color: $color-blue-1;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}

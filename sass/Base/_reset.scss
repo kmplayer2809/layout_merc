@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: $color-black-0;
+    line-height: $line-height-0;
+    @include text($color-white-0, $fs-0, $fw-normal);
+    scroll-behavior: smooth;
+}
+p{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+button:focus{
+    outline: none;
+}
+
+      

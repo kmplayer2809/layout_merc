@@ -1,0 +1,118 @@
+.myCarousel {
+    .carousel-item {
+        position: relative;
+        height: 600px;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel__content {
+            position: absolute;
+            left: 10%;
+            top: 10%;
+            width: 50%;
+
+            h2 {
+                position: relative;
+                @include text($color-white-0, $fs-4, $fw-bold);
+                padding: $pd-2 0;
+
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    top: -10px;
+                    content: "";
+                    width: 70px;
+                    height: 3px;
+                    background-color: $color-white-0;
+
+                }
+            }
+
+            p.content__text__1 {
+                padding-top: 25%;
+                padding-bottom: 10px;
+            }
+        }
+
+    }
+}
+
+@include reponsive("extra-large") {
+    .myCarousel {
+        .carousel-item {
+            height: 500px;
+
+            .carousel__content {
+                p.content__text__1 {
+                    padding-top: 15%;
+                }
+            }
+        }
+    }
+}
+
+@include reponsive("medium") {
+    .myCarousel {
+        .carousel-item {
+            position: relative;
+            height: 600px;
+
+            img {
+                position: relative;
+                height: 300px;
+            }
+
+            .carousel__content {
+                position: relative;
+                height: 300px;
+                width: 100%;
+                left: 0;
+                top: 0;
+                background-color: $color-white-0;
+                padding: $pd-2;
+
+                h2 {
+                    position: relative;
+                    @include text($color-dark, $fs-2, $fw-bold);
+                    padding: $pd-2 0;
+
+                    &::before {
+                        position: absolute;
+                        left: 0;
+                        top: -5px;
+                        content: "";
+                        width: 70px;
+                        height: 3px;
+                        background-color: $color-dark;
+
+                    }
+                }
+
+                p.content__text__1 {
+                    padding-top: 5%;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    @include text($color-dark, $fs-1, $fw-normal);
+                }
+            }
+        }
+
+        a.carousel-control-prev i,
+        a.carousel-control-next i{
+            position: absolute;
+			top:25%;
+			transform: scale(2);
+        }
+
+    }
+}

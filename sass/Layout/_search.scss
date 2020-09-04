@@ -1,0 +1,32 @@
+.search{
+    padding: 2rem 0;
+    background-color: $color-black-0;
+    .search-box{
+        width: 85%;
+        margin: auto;
+        display: flex;
+        border: 1px solid $color-black-0;
+        .form-control{
+            
+            width: 100%;
+            padding: 8px;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            border: none;
+            border-radius: 0;
+            &:focus{
+                outline: none;
+            }
+        }
+        .btn-submit{
+            width: 70px;
+            color: $color-black-2;
+            background-color: $color-white-0;
+            border: none;
+            cursor: pointer;
+            &:focus{
+                outline: black;
+            }
+        }
+    }
+}
